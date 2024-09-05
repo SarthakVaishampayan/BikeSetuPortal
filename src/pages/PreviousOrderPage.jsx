@@ -6,7 +6,7 @@ export default function PreviousOrderPage(params) {
   return (
     <>
       <div className="ml-12">
-        <Navbar className="" />
+        <Navbar title={"Previous Order"} className="" />
       </div>
       <div>
         <Sidebar />

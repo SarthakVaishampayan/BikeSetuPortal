@@ -6,7 +6,7 @@ export default function Dashboard(params) {
   return (
     <>
       <div className="ml-12">
-        <Navbar className="" />
+        <Navbar title={"Dashboard"} className="" />
       </div>
       <div>
         <Sidebar />

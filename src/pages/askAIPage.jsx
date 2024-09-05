@@ -6,7 +6,7 @@ export default function AIRecomend(params) {
   return (
     <>
       <div className="ml-12">
-        <Navbar className="" />
+        <Navbar title={"Ask AI"} className="" />
       </div>
       <div>
         <Sidebar />

@@ -6,7 +6,7 @@ export default function CustomerPage(params) {
   return (
     <>
       <div className="ml-12">
-        <Navbar className="" />
+        <Navbar title={"Customers"} className="" />
       </div>
       <div>
         <Sidebar />

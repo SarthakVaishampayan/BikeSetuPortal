@@ -17,13 +17,13 @@ import {
   CardContent,
 } from "@/components/ui/card";
 
-export default function Navbar() {
+export default function Navbar({ title }) {
   const navigate = useNavigate();
   return (
     <header className="flex items-center justify-between bg-background px-4 py-3 shadow-sm sm:px-6 md:px-8">
       <div className="flex items-center gap-4">
-        <Link to="#" className="text-lg font-bold">
-          Dashboard
+        <Link to="#" className="text-2xl ml-3 mr-7 font-bold">
+          {title}
         </Link>
         <span className="text-sm text-muted-foreground">
           {new Date().toLocaleDateString()} -{" "}
@@ -56,7 +56,7 @@ export default function Navbar() {
                   <span className="flex h-2 w-2 translate-y-1.5 rounded-full bg-blue-500" />
                   <div className="grid gap-1">
                     <p className="text-sm font-medium">
-                      Your call has been confirmed.
+                      You have a new sale
                     </p>
                     <p className="text-sm text-muted-foreground">5 min ago</p>
                   </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" size="icon" className="rounded-full">
               <img
-                src="/placeholder.svg"
+                src="https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg"
                 width={36}
                 height={36}
                 alt="User Avatar"
